@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .highlighted-text {
+      display: inline-block;
+      background-color: yellow; /* Set your desired background color */
+      width: 75px;
+      height: 75px;
+      line-height: 75px; /* Align text vertically in the middle */
+      text-align: center; /* Align text horizontally in the middle */
+      position: relative;
+    }
+
+    .highlighted-text::after {
+      content: ""; /* Create a pseudo-element for the background image */
+      background-image: url('your-image-url.jpg'); /* Replace 'your-image-url.jpg' with the URL of your image */
+      background-size: cover; /* Adjust the background size as needed */
+      background-position: center center; /* Center the background image */
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1; /* Place the background image behind the text */
+    }
+  </style>
+</head>
+<body>
+  <div class="highlighted-text">Your Text</div>
+</body>
+</html>
