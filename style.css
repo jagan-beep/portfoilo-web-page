@@ -1,52 +1,133 @@
-.container {
-  background-color: grey;
-  border: 0;
-  display: grid;
-  grid-template-columns: auto auto;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.links {
-  padding-left: 600px;
-  padding-top: 50px;
+.header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: grey;
+}
+
+h1 {
+  border-style: none;
+  width: 180px;
+  height: 100px;
+  margin-left: 30px;
+  background-color: cadetblue;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
   font-size: 20px;
+  align-items: flex-end;
 }
 
 #About,
 #Work,
 #Contact,
 #Resume {
-  color: black;
-  padding-left: 10px;
-}
-
-.container1 {
-  display: grid;
-  grid-template-columns: auto auto;
-  gap: 20px;
-  background-image: url(https://wallpapercave.com/wp/wp2742538.jpg);
-  background-repeat: no-repeat;
-  background-size: 130%;
-}
-
-#title {
-  font-size: 30px;
-  margin-top: 75px;
-  text-align: right;
+  color: aqua;
   padding-right: 20px;
 }
 
-.container2 {
+.title {
   display: grid;
-  grid-template-columns: 40% 1fr 55%;
-  margin-top: 30px;
-  width: 100vw;
-}
-h2 {
-  padding-left: 220px;
-  font-size: 50px;
+  grid-template-columns: 1fr 1fr;
+  background-image: url(https://th.bing.com/th/id/OIP.5gs7zhV12i7yEq7sRB9DEQHaE8?rs=1&pid=ImgDetMain);
+  background-repeat: no-repeat;
+  background-size: 130%;
+  align-items: center;
 }
 
+h2 {
+  color: rgb(0, 225, 255);
+}
+.container {
+  display: grid;
+  grid-template-columns: 20% 15% 30% 30%;
+  grid-template-rows: 25% 35% 15% 15%;
+  align-items: stretch;
+  column-gap: 10px;
+  row-gap: 5px;
+  grid-template-areas:
+    "item1 item1 item2 item2"
+    "item3 item4 item4 item4"
+    "item3 item4 item4 item4"
+    "item5 item6 item7 item8";
+}
+#about-me {
+  grid-column: 3 / span 2;
+}
+
+div {
+  font-size: 30px;
+}
 .vl {
   border-left: 6px solid rgb(34, 0, 128);
-  height: 200px;
+  height: 150px;
+}
+
+#height {
+  border-left: 6px solid rgb(34, 0, 128);
+  height: 500px;
+}
+
+#Guess {
+  grid-column: 3 / span 2;
+  align-items: stretch;
+  position: relative;
+}
+
+#app {
+  max-width: fit-content;
+  height: 100%;
+}
+
+#discrption {
+  position: absolute;
+  top: 10px;
+  background-color: whitesmoke;
+}
+
+#led {
+  grid-column-start: 3;
+  position: relative;
+}
+
+#lw {
+  position: absolute;
+  top: 10px;
+  background-color: whitesmoke;
+}
+
+#cal {
+  position: relative;
+}
+
+#cal-3 {
+  position: absolute;
+  top: 10px;
+  background-color: whitesmoke;
+}
+
+#puzzle {
+  grid-column-start: 3;
+  position: relative;
+}
+#puzz-3 {
+  position: absolute;
+  top: 10px;
+  background-color: whitesmoke;
+}
+
+#run {
+  position: relative;
+}
+#run-2 {
+  position: absolute;
+  top: 10px;
+  background-color: whitesmoke;
 }
