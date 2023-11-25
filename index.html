@@ -3,16 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="/portfoilo-web-page/style2.css" rel="stylesheet" />
+    <link href="/portfoilo-web-page/style.css" rel="stylesheet" />
     <title>My Portfolio</title>
   </head>
   <body>
     <header class="header">
       <h1>Jaganmohan Regula</h1>
       <nav>
-        <a href="#" id="About">About Me</a>
-        <a href="#" id="Work">Work</a>
-        <a href="#" id="Contact">Contact Me</a>
+        <a href="#about" id="About">About Me</a>
+        <a href="#work" id="Work">Work</a>
+        <a href="#contactme" id="Contact">Contact Me</a>
         <a href="#" id="Resume">Resume</a>
       </nav>
     </header>
@@ -23,11 +23,12 @@
         width="150"
         height="150"
       />
+
       <h2>Welcome To My Portfolio!</h2>
     </section>
     <br />
     <section class="container">
-      <div>About Me</div>
+      <div id="about" class="sidebar">About Me</div>
       <span class="vl"></span>
       <p id="about-me">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa
@@ -43,9 +44,18 @@
         recusandae qui?Lorem ipsum dolor sit amet consectetur adipisicing elit.
         Ducimus facere et tenetur inventore, nam non voluptas, ab debitis at
         cumque soluta excepturi maxime cupiditate ad, voluptatum eum porro sed
-        rem!
+        rem! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum id in
+        laborum commodi minus hic neque porro enim asperiores, harum voluptatem
+        atque saepe aut illo alias inventore omnis et molestiae consequuntur
+        aliquam fuga. Facilis modi dolor debitis maiores tenetur esse ea, quia
+        numquam ut cum nesciunt illo tempore voluptates autem tempora quaerat
+        magni veritatis! Sunt earum optio voluptas! Atque natus eius reiciendis,
+        aut quam ad praesentium dicta eveniet recusandae consequatur
+        voluptatibus placeat voluptas inventore hic, minus, delectus culpa
+        numquam! Quos.
       </p>
-      <div>Work</div>
+
+      <div id="work" class="sidebar">Work</div>
       <span id="height"></span>
       <div id="Guess">
         <img
@@ -53,48 +63,50 @@
           src="https://th.bing.com/th/id/OIP.YCiXdJKV4j-Ly66CB5TPfwHaEc?rs=1&pid=ImgDetMain"
           alt="Image of guessing number"
         />
-        <h3 id="discrption">Guess Number</h3>
+        <h4 id="discrption">Guess Number</h4>
       </div>
       <div id="led">
         <img
           id="wall"
           src="https://th.bing.com/th/id/R.ea57dd09077d6e1e00ef10ac5f58326b?rik=7XWtfIBeAu%2fZGQ&pid=ImgRaw&r=0"
           alt="image of ledwall"
-          width="200px"
-          height="130px"
         />
-        <h3 id="lw">LED WALL</h3>
+        <h4 id="lw">LED WALL</h4>
       </div>
       <div id="cal">
         <img
           id="cal-2"
           src="https://assets.materialup.com/uploads/cf2b8aee-2966-48d3-a70e-b8021bb82544/preview.jpg"
           alt="image of caluclator"
-          width="200px"
-          height="130px"
         />
-        <h3 id="cal-3">CALUCLATOR</h3>
+        <h4 id="cal-3">CALUCLATOR</h4>
       </div>
       <div id="puzzle">
         <img
           id="puzz-1"
           src="https://th.bing.com/th/id/OIP.flPw1JswsAR4b30uhjMWtgHaE6?rs=1&pid=ImgDetMain"
           alt="image of puzzle"
-          width="200px"
-          height="130px"
         />
-        <h3 id="puzz-3">puzzle</h3>
+        <h4 id="puzz-3">puzzle</h4>
       </div>
       <div id="run">
         <img
           id="run-1"
           src="https://feuerbacherb.github.io/assets/images/run-buddy.jpg"
           alt="image of runbuddy"
-          width="200px"
-          height="130px"
         />
-        <h3 id="run-2">puzzle</h3>
+        <h4 id="run-2">Run Buddy</h4>
       </div>
     </section>
+    <footer class="footer">
+      <div class="sidebar">Contact Me</div>
+      <span id="line"></span>
+      <span id="contactme" class="tags">
+        <a href="#">078670369</a>
+        <a href="#">jaganm863@gmail.com</a>
+        <a href="#">facebook</a>
+        <a href="#">twitter</a>
+      </span>
+    </footer>
   </body>
 </html>
