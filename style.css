@@ -171,9 +171,22 @@ div {
   .container {
     display: grid;
     grid-template-columns: 20% auto 30%;
-    grid-template-rows: 25% 35% 15% 15%;
+    grid-template-rows: 15% 20% 5% 5%;
     align-items: stretch;
     column-gap: 10px;
     row-gap: 10px;
+  }
+  .header {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color: grey;
+  }
+  .title {
+    display: grid;
+    grid-template-columns: auto auto;
+    background-image: url(https://th.bing.com/th/id/OIP.5gs7zhV12i7yEq7sRB9DEQHaE8?rs=1&pid=ImgDetMain);
+    background-repeat: no-repeat;
+    background-size: 130%;
+    align-items: center;
   }
 }
